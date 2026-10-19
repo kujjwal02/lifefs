@@ -1,0 +1,2 @@
+# Vite serves the UI. The Rust watcher skips it, because debug starts rewrite ui/src/bindings.ts.
+ui/

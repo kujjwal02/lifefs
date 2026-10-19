@@ -1,0 +1,21 @@
+:root {
+  color-scheme: light dark;
+  font:
+    14px / 1.4 -apple-system,
+    "Segoe UI",
+    sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0 24px 24px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.hint {
+  color: color-mix(in srgb, currentColor 65%, transparent);
+  font-size: 12px;
+}

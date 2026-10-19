@@ -1,0 +1,26 @@
+pre-commit:
+  parallel: true
+  jobs:
+    - name: privacy
+      run: scripts/privacy-check.sh {staged_files}
+    - name: rustfmt
+      glob: "*.rs"
+      run: cargo fmt --all -- --check
+    - name: taplo
+      glob: "*.toml"
+      run: taplo fmt --check {staged_files}
+    - name: typos
+      run: typos --force-exclude {staged_files}
+    - name: biome
+      glob: "*.{js,ts,json,jsonc,html,css}"
+      run: biome check --no-errors-on-unmatched {staged_files}
+    - name: rumdl
+      glob: "*.md"
+      run: rumdl check {staged_files}
+
+pre-push:
+  jobs:
+    - name: clippy
+      run: cargo clippy --workspace --all-targets --locked -- -D warnings
+    - name: typecheck
+      run: bun --bun run typecheck

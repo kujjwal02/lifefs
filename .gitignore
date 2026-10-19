@@ -1,0 +1,17 @@
+scratch/
+target/
+node_modules/
+crates/app/ui/dist/
+crates/app/gen/
+.DS_Store
+.env
+.vscode/
+# Local only: agent notes that point at private research, and the privacy hook's domain list.
+AGENTS.local.md
+privacy-domains.txt
+# Real messages and the labelled eval set never enter the repo.
+fixtures/private/
+*.sqlite
+*.sqlite-*
+*.jsonl
+!fixtures/synthetic/**/*.jsonl

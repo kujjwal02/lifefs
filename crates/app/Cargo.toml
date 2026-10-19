@@ -1,0 +1,22 @@
+[package]
+name = "lifefs"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+license.workspace = true
+
+[build-dependencies]
+tauri-build.workspace = true
+
+[dependencies]
+clap.workspace = true
+specta.workspace = true
+specta-typescript.workspace = true
+tauri.workspace = true
+tauri-specta.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+
+[lints]
+workspace = true
