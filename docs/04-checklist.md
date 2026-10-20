@@ -77,7 +77,7 @@ No code. Fixes the note schema before any code writes notes.
 
 Done when:
 
-- [ ] A Bases cell edited on Obsidian mobile keeps every frontmatter field.
+- [ ] A Bases cell edited in Obsidian on the Mac keeps every frontmatter field.
 
 ### Step 1.2: store and vault writer
 
@@ -95,7 +95,7 @@ Done when:
 Done when:
 
 - [ ] The hand-made items from step 1.1 round-trip through SQLite.
-- [ ] A field edited on the phone survives the next sweep.
+- [ ] A field edited in Obsidian survives the next sweep.
 - [ ] A deleted note leaves a tombstone.
 
 ### Step 1.3: connector contract and meetings
@@ -206,6 +206,6 @@ Done when:
 
 - [ ] The LaunchAgent sweeps for 7 days in a row with no manual runs.
 - [ ] Every item's quote passes the code check against its source message.
-- [ ] A field edited on the phone survives the next sweep.
+- [ ] A field edited in Obsidian survives the next sweep.
 - [ ] A removed Slack reaction closes its item within one sweep.
 - [ ] 50 windows are labelled.

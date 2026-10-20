@@ -22,8 +22,8 @@ Each step is one branch, merged before the next starts. Each step is tested live
 
 | Step | Builds | Exit check |
 |---|---|---|
-| 1.1 Note format | `todos.base` and 5 hand-made items | A Bases cell edited on the phone keeps every field |
-| 1.2 Store and vault writer | SQLite store and the note writer | A phone edit survives the next sweep |
+| 1.1 Note format | `todos.base` and 5 hand-made items | A Bases cell edited in Obsidian keeps every field |
+| 1.2 Store and vault writer | SQLite store and the note writer | An Obsidian edit survives the next sweep |
 | 1.3 Connector contract and meetings | The `Connector` trait and the meetings connector | A ticked meeting item closes its item |
 | 1.4 Tauri shell and LaunchAgent | Status list, Sweep now, LaunchAgent install | Sweeps run for 2 days with no manual run |
 | 1.5 Slack read, reactions only | Slack connector and the token setup screen | A `:bookmark:` reaction creates an item |
@@ -32,8 +32,8 @@ Each step is one branch, merged before the next starts. Each step is tested live
 | 1.8 Closures | `recheck` and reply-outcome proposals | A removed or done reaction closes its item |
 | 1.9 Labelling and soak | `lifefs label` | 50 windows labelled. 7 days with no manual sweep |
 
-Phase 1 is done when the sweep runs 7 days unattended, every quote passes the check, phone edits
-survive, and a removed reaction closes its item within one sweep.
+Phase 1 is done when the sweep runs 7 days unattended, every quote passes the check, Obsidian
+edits survive, and a removed reaction closes its item within one sweep.
 
 ## Phase 2 and later
 
@@ -45,7 +45,8 @@ survive, and a removed reaction closes its item within one sweep.
 5. Follow-up chase dates and the "Chase today" view.
 6. Inferred closures without review, once the labelled set shows they are right.
 7. Tests, the Keychain and code signing, once the code settles.
-8. The multi-device lease and the Windows build.
+8. The multi-device lease, the Windows build, and the phone over Syncthing. Repeat the Bases
+   cell test and the edit-survives test on Obsidian mobile.
 9. Research and design the memory bank, including agent chats and agent work.
 10. Merge meeting capture in as a module.
 
@@ -66,7 +67,6 @@ precision of new items, closure accuracy and chase precision, with a target of a
 
 - Create the internal Slack app with `reactions:read` among its scopes. Needed for step 1.5.
 - Turn off "Help improve Claude" on the account before the first sweep.
-- Test editing a Bases cell on Obsidian mobile. Needed for step 1.1.
 - Create the Gmail OAuth clients before phase 2. Set the personal one to "In production", because a
   client in Testing mode expires refresh tokens every 7 days.
 - Grant Full Disk Access to the app before the WhatsApp connector.
