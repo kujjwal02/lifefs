@@ -44,6 +44,8 @@ flowchart LR
 - Every item carries a verbatim quote and a link to its source. Code checks the quote.
 - SQLite is the source of truth. The vault notes are a two-way view.
 - My edits win. A field I changed is never rewritten. A deleted note leaves a tombstone.
+- Only my tick or an explicit marker closes an item. An inferred closure is a proposal in "Needs
+  review".
 - Raw messages never enter the vault or this repo.
 - Each source has a privacy policy. Personal WhatsApp stays on the Mac's local model.
 - Each module asks for its OS permission and downloads its models only when enabled.

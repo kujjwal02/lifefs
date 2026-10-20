@@ -68,11 +68,12 @@ one branch, merged before the next starts.
 
 No code. Fixes the note schema before any code writes notes.
 
-- [ ] Item note frontmatter: every field, its type and its closed values.
-- [ ] `todos.base` with the open list, the follow-up list and a "Needs review" view.
-- [ ] Five hand-made item notes that cover a to-do, a follow-up, a closed item, an item in review
-  and a tombstone.
-- [ ] Note names and the folder layout in the vault.
+- [x] Item note frontmatter: every field, its type and its closed values. `review` names the open
+  question, and `same_as` holds a merge target.
+- [x] `todos.base` with the open list, the follow-up list and a "Needs review" view.
+- [x] Five hand-made item notes that cover a to-do, a follow-up, a closed item, an item in review
+  and a dropped item.
+- [x] Note names and the folder layout in the vault.
 
 Done when:
 
