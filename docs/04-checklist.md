@@ -77,7 +77,7 @@ No code. Fixes the note schema before any code writes notes.
 
 Done when:
 
-- [ ] A Bases cell edited in Obsidian on the Mac keeps every frontmatter field.
+- [x] A Bases cell edited in Obsidian on the Mac keeps every frontmatter field.
 
 ### Step 1.2: store and vault writer
 
@@ -86,7 +86,7 @@ Done when:
 - [ ] `store`: SQLite schema and migrations.
 - [ ] `store`: writer lock with `File::try_lock`, so one sweep runs at a time.
 - [ ] `output-obsidian`: write item notes with yaml-edit, keeping fields and formatting it does not
-  own.
+  own. Write in Obsidian's style: block lists, and quotes only where YAML needs them.
 - [ ] `output-obsidian`: per-field merge. A field I edited in the vault wins over the store.
 - [ ] `output-obsidian`: a deleted note leaves a tombstone, and the item is never rewritten.
 - [ ] Atomic note write: temp file, `fsync`, rename.
