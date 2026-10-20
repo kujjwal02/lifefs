@@ -59,9 +59,9 @@ one branch, merged before the next starts.
 
 ### Before phase 1
 
-- [ ] Create the internal Slack app with `reactions:read` among its scopes. Needed for step 1.5.
-- [ ] Turn off "Help improve Claude" on the account. Needed for step 1.6.
-- [ ] Check the `search.messages` rate tier, for thread replies in quiet channels. Needed for step
+- [x] Create the internal Slack app with `reactions:read` among its scopes. Needed for step 1.5.
+- [x] Turn off "Help improve Claude" on the account. Needed for step 1.6.
+- [x] Check the `search.messages` rate tier, for thread replies in quiet channels. Needed for step
   1.5.
 
 ### Step 1.1: note format by hand
