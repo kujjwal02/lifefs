@@ -48,12 +48,12 @@ one branch, merged before the next starts.
 ### Done when
 
 - [x] `just check` passes on the Mac.
-- [ ] `just check` passes in the Check workflow, and clippy passes on Windows.
+- [x] `just check` passes in the Check workflow, and clippy passes on Windows.
 - [x] `just dev` opens an empty window that shows the app version.
 - [x] `lifefs sweep` exits 0.
 - [x] `just privacy` passes over every file before the first push.
 - [x] A misformatted file blocks a commit.
-- [ ] The public GitHub repo exists, and `main` is pushed.
+- [x] The public GitHub repo exists, and `main` is pushed.
 
 ## Phase 1: Slack and meeting notes on the Mac
 
